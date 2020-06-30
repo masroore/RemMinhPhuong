@@ -1,0 +1,20 @@
+{
+  "name": "botble/bootstrap4",
+  "type": "Botble bootstrap 4 theme",
+  "description": "Bootstrap 4 theme",
+  "homepage": "https://comartek.com",
+  "authors": [
+    {
+      "name": "TuanNguyen",
+      "homepage": "https://comartek.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Theme\\Bootstrap4\\": "src/"
+    }
+  }
+}

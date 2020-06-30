@@ -1,0 +1,15 @@
+{
+    "name": "Bootstrap4",
+    "namespace": "Theme\\Bootstrap4\\",
+    "description": "A Bootstrap 4 theme",
+    "author": "Comartek",
+    "version": "5.4",
+    "required_plugins": [
+        "blog",
+        "contact",
+        "gallery",
+        "language",
+        "block",
+        "member"
+    ]
+}
