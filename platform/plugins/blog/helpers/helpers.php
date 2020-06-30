@@ -241,3 +241,15 @@ if (!function_exists('get_post_formats')) {
         return PostFormat::getPostFormats($convertToList);
     }
 }
+
+if (!function_exists('get_children_categories')) {
+    /**
+     * @param $categoryId
+     * @return array
+     */
+    function get_children_categories($categoryId)
+    {
+        return app(CategoryInterface::class)
+            ->getAllRelatedChildrenIds($categoryId);
+    }
+}

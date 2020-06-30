@@ -16,13 +16,24 @@ class CategoryForm extends FormAbstract
     public function buildForm()
     {
         $list = get_categories();
+        $allChildren = null;
+
+        if ($this->getModel() && $this->model->id) {
+            $allChildren = get_children_categories($this->model->id);
+        }
 
         $categories = [];
         foreach ($list as $row) {
-            if ($this->getModel() && $this->model->id === $row->id) {
-                continue;
+            if ($allChildren) {
+                if ($this->getModel() && $this->model->id === $row->id || in_array($row->id, $allChildren)) {
+                    continue;
+                }
+            } else {
+                if ($this->getModel() && $this->model->id === $row->id) {
+                    continue;
+                }
             }
-
+            
             $categories[$row->id] = $row->indent_text . ' ' . $row->name;
         }
         $categories = [0 => trans('plugins/blog::categories.none')] + $categories;
