@@ -1,0 +1,29 @@
+//Colors
+$bg-footer: #282840;
+$news: #FDB55B;
+$name-hover: #f26780;
+$color-p : #ABABAB;
+$padding-main: 80px;
+$black: #000000;
+
+
+$header-height: 60px;
+$header-height-mobile: 50px;
+$footer-height: 90px;
+$gray-color: #9B9B9B;
+$primary-color: #FF9314;
+$hover-color: mix($primary-color, #000, 90);
+$border-color: #EDEDED;
+$date-color: #A9A9A9;
+$green-color: #129262;
+$contact-bg: #129262;
+
+//Font Sizes
+$footer-fontsize: 13px;
+
+//Position
+$contact-content-position-top: -100px;
+$contact-map-position-top: $contact-content-position-top - 65px;
+
+//bootstrap
+$grid-gutter-width: 20px;

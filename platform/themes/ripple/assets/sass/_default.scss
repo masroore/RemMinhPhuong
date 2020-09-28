@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    body {
+        font-family: "Lato", "HelveticaNeue";
+        font-size: 0.95rem;
+    }
+}
+
+a {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        color: $name-hover;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-19 {
+    font-size: 19px;
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

@@ -1,4 +1,11 @@
-@import 'main';
+@import "variables";
+@import "mixin";
+@import "bootstrap";
+@import "icon";
+@import "fonts";
+@import "default";
+@import "header";
+@import "page/page";
 @import 'content';
 @import 'rtl';
 @import 'custom';
